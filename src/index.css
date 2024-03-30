@@ -1,0 +1,365 @@
+*{
+  margin: 0;padding: 0;
+  box-sizing: border-box;
+  
+}
+.app{
+  background-color:#d3d2d2;
+}
+.content{
+  height: 100vh;
+  margin: 0 40px;
+  margin-top: 20px;
+}
+
+/* .navbar{
+  background-color: rgba(0, 252, 252, 0.858) !important;
+} */
+/* .register-page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+
+} */
+
+/* transection page  */
+
+.ant-table{
+  margin-left: 20px;
+}
+.filters{
+  border: 1px solid black;
+  margin: 0 30px;
+  margin-bottom: 12px;
+  margin-top: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #d2eafbe8;
+  /* box-shadow: 2px 0 10px gray; */
+}
+.filters .heading{
+  font-size: 17px;
+  font-weight: 500;
+}
+.bt{
+  background-color: #3798ff;
+color: #fff;
+font-weight: 500;
+font-family: 'Commercialiq';
+transition: background-color 0.3s;
+font-size: 16px;
+padding: 10px 10px;
+border-radius: 7px;
+}
+.bt:hover{
+  background-color: #000000;
+}
+.cat .ss1{
+  background-color: #00b353;
+  font-size: 23px;
+  color: white;
+  padding: 5px;
+}
+.cat .ss2{
+ background-color: #ce18ff;
+ padding: 5px 9px;
+ font-size: 23px;
+ color: white;
+}
+
+      /* antd icons */
+
+.switch-icons{
+  border: 1.5px solid rgba(0, 0, 0, 0.678);
+  border-radius: 5px;
+  padding: 10px 15px;
+  
+}
+.anticon svg{
+  font-size: 20px;
+  cursor: pointer;
+}
+.active-icon{
+  color: black;
+}
+.inactive-icon{
+  color: blue;
+}
+
+/* -----------------------------Header----------------------------- */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #5f99d2c3; /* Add your preferred background color */
+  color: #ffffff; /* Add your preferred text color */
+  z-index: 100;
+}
+
+.nav-item {
+  padding-left: 10px;
+  padding-right: 7px;
+  font-size: 20px;
+}
+
+.nav-link {
+  color: #fff; /* Add your desired link color */
+}
+
+.nav-link:hover {
+  color: #ccc; /* Add your desired link hover color */
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color:#100c0a;
+  color: #fff;
+  padding: 16px;
+  font-size: 29px;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #3798ff;
+  color: #fff;
+  font-weight: 500;
+  font-family: 'Commercialiq';
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #000000;
+}
+
+/* ---------------------Header Media query -------------------------- */
+/* Default styles */
+.navbar-collapse {
+  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.pre {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Media query for max width 450px */
+@media (max-width: 450px) {
+  .navbar-collapse {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav {
+    margin-top: 15px;
+  }
+
+  .navbar-brand {
+    margin-bottom: 15px;
+  }
+
+  .pre {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 450px) {
+  .filters {
+    margin-left: -30px;
+    width: 115%;
+    height: 12%;
+  }
+  .filters .sel{
+    padding: 8px 10px;
+  }
+
+  .filters .heading {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 450px) {
+  .navbar-collapse {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav {
+    margin-top: 15px;
+  }
+
+  .navbar-brand {
+    margin-bottom: 15px;
+  }
+
+
+  .pre {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+
+  .nav-item {
+    padding: 8px 5px;
+    font-size: 16px;
+  }
+}
+
+
+/* ---------------------Analytics -------------------------- */
+ 
+
+/* ---------------------------login form --------------------------- */
+
+.page{
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 100px 20px;
+  /* background-color: #ffd8bf; */
+  background-image: url('https://i.ibb.co/020fbVB/images-1.png');
+  text-align: center;  
+}
+.register {
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 110px 20px;
+  /* background-color: #ffd8bf; */
+  background-image: url('https://i.ibb.co/020fbVB/images-1.png');
+  text-align: center;
+}
+
+.register-page {
+  display: flex;
+padding: 14px 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.register-page img {
+  width: 450px; /* Adjust the image width as needed */
+  height: 405px; /* Preserve the aspect ratio */
+}
+
+.register-page form {
+  width: 100%;
+  max-width: 400px;
+  border: 1.8px solid rgb(14, 11, 18);
+  padding: 30px 20px; /* Increase padding for better spacing */
+}
+
+.register-page h1 {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+}
+
+.register-page .d-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.register-page .d-flex button {
+  background-color: #3798ff;
+  color: #fff;
+  font-weight: 500;
+  font-family: 'Commercialiq';
+  margin-top: 20px; /* Add some spacing between link and button */
+  padding: 10px 20px; /* Increase padding for better button appearance */
+  transition: background-color 0.3s;
+}
+
+.register-page .d-flex button:hover {
+  background-color: #000000;
+}
+
+.register-page .ant-form-item-label {
+  font-weight: bold;
+}
+
+.register-page .ant-input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%; /* Make the input fields full-width within the form */
+}
+
+.register-page .ant-form-item {
+  margin-bottom: 20px;
+}
+
+.cat {
+  display: flex;
+  justify-content: space-around;
+  /* width: 600%; */
+  margin: 10px 20px;
+}
+#com{
+  margin-left: -300px;
+}
+
+/* .cat .col-md-4 {
+   margin-left: 20px;
+} */
+
+
+@media screen and (max-width: 450px) {
+  .ct {
+    width: 100%;
+    margin-left: -70px; /* Adjust the value to set the desired left margin for the Table */
+  }
+  
+  .Analytics {
+    margin-left: 20px; /* Adjust the value to set the desired left margin for the Analytics */
+  }
+  .register-page img {
+    display: none;
+  }
+  .bt{
+    background-color: #3798ff;
+  color: #fff;
+  font-weight: 500;
+  font-family: 'Commercialiq';
+  transition: background-color 0.3s;
+  font-size: 16px;
+  padding: 10px 10px;
+  border-radius: 7px;
+  }
+  .bt:hover{
+    background-color: #000000;
+  }
+  .switch-icons{
+  border: 1.5px solid rgba(0, 0, 0, 0.678);
+  border-radius: 5px;
+  padding: 5px 0px;
+padding-left: 13px;
+margin-right: 12px;
+  }
+}
